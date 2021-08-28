@@ -1,32 +1,31 @@
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.stattools import adfuller
 
 # Load data
-df = pd.read_csv('03_TSLA.csv')
+df = pd.read_csv('01_AMD.csv', parse_dates=[0])
 df = df[["Date", "Close"]]
-print('===========================================================================')
-print(df.describe())
-print('===========================================================================')
+con = df['Date']
+df['Date']=pd.to_datetime(df['Date'])
+df.set_index('Date', inplace=True)
 
 # Convert to time series:
 ts = df['Close']
-# Log transform time series
-ts_log=np.log(ts)
 
 ########################################################################################################################
 #################################################### Create plots ######################################################
 ########################################################################################################################
 
-decomposition = seasonal_decompose(ts_log, period=30)
+decomposition = seasonal_decompose(ts, model='multiplicative', freq = 2)
+observed = decomposition.observed
 trend = decomposition.trend
 seasonal = decomposition.seasonal
 residual = decomposition.resid
 # Customize subplots
 plt.subplot(411)
-plt.plot(ts, label='Παρατηρήσεις')
+plt.plot(observed, label='Παρατηρήσεις')
+plt.legend(loc='best')
 plt.subplot(412)
 plt.plot(trend, label='Τάση')
 plt.legend(loc='best')
@@ -46,7 +45,7 @@ plt.show()
 
 print(
     'Results of Dickey-Fuller Test:')
-dftest = adfuller(ts_log, autolag='AIC')
+dftest = adfuller(ts, autolag='AIC')
 dfoutput = pd.Series(dftest[0:4], index=['ADF Statistic', 'p-value', '#Lags Used', 'Number of Observations Used'])
 for key, value in dftest[4].items():
     dfoutput['Critical Value (%s)' % key] = value
