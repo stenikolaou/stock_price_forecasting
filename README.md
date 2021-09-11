@@ -12,12 +12,16 @@ Before choosing to apply NeuralProphet, three artificial neural networks models 
 
 As mentioned above, before applying NeuralProphet, three ANN models were tested. Before applying the model each timeseries used for testing was plotted and decomposed. Moreover, the Augmented Dickey-Fuller test was applied to check for stationarity. 
 
-*AMD stock closing price area chart 01/01/2011 - 31/12/2020*
+*NVDA stock closing price area chart 01/01/2011 - 31/12/2020*
 
 ![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/area_chart.png)
 
-*AMD stock timeseries decomposition diagram to check for trend, seasonality and residuals*
+*NVDA stock timeseries decomposition diagram to check for trend, seasonality and residuals*
 
 ![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/decompose.png)
+
+*LSTM model applied with 200 epochs and ADAM optimizer applied to NVDA stock price timeseries*
+
+![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/lstm.png)
 
 
