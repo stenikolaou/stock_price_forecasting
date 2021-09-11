@@ -2,7 +2,7 @@
 
 This is a python ML project for stock price forecasting using *streamlit* and *NeuralProphet*. 
 
-Before choosing to apply NeuralProphet, three artificial neural networks models were tested and more specifically:
+Before choosing to apply NeuralProphet, three artificial neural network models were tested and more specifically:
 
 * LSTM (Long-short term memory)
 * MLP (Multilayer perceptron)
@@ -26,10 +26,9 @@ As mentioned above, before applying NeuralProphet, three ANN models were tested.
 
 ## Streamlit
 
-Using streamlit a simple web app was created. The user can choose through a combobox, a stock 
+Using streamlit, a simple web app was created. The user can choose a stock through a combobox and set the desired forecasting period (in days) through a slider. After choosing a stock, he gets information about the stock price for the last five days,as well as an interactive chart.
 
 ![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/streamlit_main.png)
-
 
 After choosing the desired stock and setting the prediction days a forecast is produced and the user can see a table containing the last five values of the forecast dataset, as well as a plot. 
 
