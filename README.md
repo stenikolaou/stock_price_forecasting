@@ -30,6 +30,9 @@ Using streamlit a simple web app was created. The user can choose through a comb
 
 ![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/streamlit_main.png)
 
+
+After choosing the desired stock and setting the prediction days a forecast is produced and the user can see a table containing the last five values of the forecast dataset, as well as a plot. 
+
 ![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/streamlit_forecast.png)
 
 
