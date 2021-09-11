@@ -8,6 +8,6 @@ Before choosing to apply NeuralProphet, three artificial neural networks models 
 * MLP (Multilayer perceptron)
 * NeuralProphet
 
-	![alt text](image.jpg)
+![AMD stock closing price area chart 01/01/2011 - 31/12/2020](image.jpg)
 
 
