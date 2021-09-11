@@ -18,6 +18,6 @@ As mentioned above, before applying NeuralProphet, three ANN models were tested.
 
 *AMD stock timeseries decomposition diagram to check for trend, seasonality and residuals*
 
-![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/area_chart.png)
+![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/decompose.png)
 
 
