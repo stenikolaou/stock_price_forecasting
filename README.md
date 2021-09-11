@@ -24,7 +24,7 @@ As mentioned above, before applying NeuralProphet, three ANN models were tested.
 
 *LSTM model applied with 200 epochs and ADAM optimizer applied to NVDA stock price timeseries*
 
-## Streamlit
+## Streamlit web app
 
 Using streamlit, a simple web app was created. The user can choose a stock through a combobox and set the desired forecasting period (in days) through a slider. After choosing a stock, he gets information about the stock price for the last five days,as well as an interactive chart.
 
