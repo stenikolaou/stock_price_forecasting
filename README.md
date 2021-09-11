@@ -28,8 +28,8 @@ As mentioned above, before applying NeuralProphet, three ANN models were tested.
 
 Using streamlit a simple web app was created. The user can choose through a combobox, a stock 
 
-![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/lstm.png)
+![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/streamlit2.png)
 
-![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/lstm.png)
+![](https://github.com/stenikolaou/stock_price_forecasting/blob/master/images/streamlit1.png)
 
 
