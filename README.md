@@ -1,8 +1,8 @@
-# stock_price_forecasting
+# Stock price forecasting 
 
-This is a python ML project for stock price forecasting using artificial neural networks. 
+## This is a python ML project for stock price forecasting using **streamlit** and **NeuralProphet**. 
 
-More specifically, three ANN models we used:
+Before applying NeuralProphet, three artificial neural networks models were tested and more specifically:
 
 * LSTM (Long-short term memory)
 * MLP (Multilayer perceptron)
